@@ -1,0 +1,16 @@
+{
+  "name": "vnc-platform",
+  "private": true,
+  "version": "8.3.1",
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "apps/*",
+    "tools/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "start": "pnpm --filter @vnc/backend start",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test"
+  }
+}
