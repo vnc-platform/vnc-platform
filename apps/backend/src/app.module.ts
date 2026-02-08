@@ -1,5 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
+import { HealthProbeController } from './bootstrap/health.probe';
+import { ShutdownHandler } from './bootstrap/shutdown.handler';
 
 @Module({
   imports: [
@@ -7,7 +9,7 @@ import { ConfigModule } from '@nestjs/config';
       isGlobal: true
     })
   ],
-  controllers: [],
-  providers: []
+  controllers: [HealthProbeController],
+  providers: [ShutdownHandler]
 })
 export class AppModule {}
