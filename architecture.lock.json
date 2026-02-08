@@ -1,0 +1,13 @@
+{
+  "lock": true,
+  "monorepo": true,
+  "packageManager": "pnpm",
+  "node": "20",
+  "backend": "nestjs",
+  "frontend": ["flutter", "nextjs"],
+  "blockchain": ["evm"],
+  "database": "postgresql",
+  "eventDriven": true,
+  "auditRequired": true,
+  "immutableLedger": true
+}
