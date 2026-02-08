@@ -1,0 +1,23 @@
+{
+  "global": {
+    "maintenanceMode": false,
+    "readOnlyMode": false
+  },
+  "security": {
+    "rateLimit": true,
+    "deviceBinding": true,
+    "simBinding": true,
+    "mpinRequired": true
+  },
+  "fraud": {
+    "velocityChecks": true,
+    "patternDetection": true,
+    "blacklistEnforcement": true
+  },
+  "economy": {
+    "walletEnabled": true,
+    "tradingEnabled": true,
+    "miningEnabled": true,
+    "adsEnabled": true
+  }
+}
